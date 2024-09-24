@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+ --primaryColor: #F5F5F5;
+ --secondaryColor: #F29434;
+ --whiteColor: #ffffff;
+ --blackColor: #010000;
+ --greyColor: #E7E7E7;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Unna", serif;
+}
+/* navigation css */
+header{
+  background-color: var(--primaryColor);
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0px auto;
+  align-items: center;
+
+}
+.nav_items{
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+}
+.nav_items a{
+  text-decoration: none;
+  color: var(--blackColor);
+  font-weight: 600;
+  border-bottom: 4px solid transparent;
+  border-radius: 1.5px;
+  padding: 15px 0px;
+  transition: all 0.3s ease-in-out;  
+}
+.nav_items a:hover, .nav_items .active{
+  transition: all 0.3s ease-in-out;  
+
+  color: var(--secondaryColor);
+  border-bottom: 4px solid var(--secondaryColor);
+
+
+}
+.menu_icon svg{
+  height: 30px;
+  width: 30px;
+}
+.search_icon svg{
+  height: 25px;
+  width: 25px;
+}
